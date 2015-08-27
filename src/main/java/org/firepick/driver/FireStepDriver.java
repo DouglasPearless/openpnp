@@ -68,7 +68,8 @@ public class FireStepDriver extends AbstractSerialPortDriver implements Runnable
 	private double feedRateMmPerMinute;
 	
 	//@Attribute
-	private double nozzleStepsPerDegree =  8.888888888;
+	//nozzleStepsPerDegree should realyy be read from the FPD not fixed here!!!
+	private double nozzleStepsPerDegree =  17.77777777778; //32 microsteps on a 1.8 degree per step motor, or 12 mirco steps per 1.8 degree ,otor = 8.888888888;
 	private boolean nozzleEnabled = false;
 	private boolean powerSupplyOn = false;
 	private RotatableDeltaKinematicsCalculator deltaCalc = new RotatableDeltaKinematicsCalculator();
